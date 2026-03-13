@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section id="loginPage" class="container" style="width: 100%">
+            <h3 class="mt-2 mb-3 text-center"><i>Enter your login details!</i></h3>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="fw-bold">Username</label>
+                    <input type="text" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="name@example.com" required>
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="fw-bold">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                        required>
+                </div>
+                <div>
+                    <div class="d-flex justify-content-between mb-3">
+                        <span><input type="checkbox" checked="checked" name="remember">Remember me</span>
+                        <button type="submit" class="btn btn-success">Login</button>
+                    </div>
+                    <p id="errorMsg" class="text-center text-danger" style="display: none;">Incorrect Username or
+                        Password, please try again.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
