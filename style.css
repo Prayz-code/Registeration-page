@@ -13,46 +13,17 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #ffd1dc;
+    min-height: 100vh;
 }
 
 .container {
     background-color: #ffffff;
-    margin: 6rem 6rem;
-    width: 450px;
 }
 
-h2 {
-    text-align: center;
-    padding: 2rem 2rem;
-}
-
-p {
-    text-align: center;
-    padding: 2rem 2rem;
-    font-size: 0.9rem;
-}
-
-.container form {
-    padding: 4rem 4rem 4rem 4rem;
-}
-
-.container form input {
-    border-radius: 5px;
-    padding: 8px;
-    margin: 0 0 2rem 2rem;
-}
-
-button {
+.btn {
     background-color: #330066;
     color: #ffffff;
-    padding: 15px;
+    padding: 12px;
     border-radius: 10px;
-    margin: 0 0 6rem 6rem;
-
-}
-
-.sign {
-    color: #330066;
-    font-size: 0.8rem;
-    font-weight: 600;
+    margin: 0 0 2rem 2rem;
 }
