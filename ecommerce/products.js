@@ -1,6 +1,11 @@
 const productsContainerElem = document.getElementById("productsContainer");
+const searchParams = new URLSearchParams(window.location.search);
+const productId = searchParams.get("id");
 
-async function getAndDisplayProducts() {
+(async function getAndDisplayProducts() {
+
+    const queryParams = new URLSearchParams(window.location.search);
+    const productId = queryParams.get("id");
     try {
         // Making API request to get products
         const response = await fetch("https://fakestoreapi.com/products");
@@ -9,6 +14,13 @@ async function getAndDisplayProducts() {
             console.error("We could not fetch the product");
             return;
         }
+
+        (async function () {
+            if (!productId) {
+                return;
+            }
+        }
+
 
         const products = await response.json();
         const productsLength = products.length;
@@ -24,6 +36,8 @@ async function getAndDisplayProducts() {
         <h2 class="itemPrice">${currentProduct.price}</h2>
       `;
             productsContainerElem.appendChild(itemContainerElem);
+
+
         }
     } catch (error) {
         console.error(error);

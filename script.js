@@ -37,7 +37,7 @@ loginForm.addEventListener("submit", async function (e) {
     const requestApiUrl = "https://igronchain.onrender.com/auth/login"
     const requestApiOptions = {
         method: "POST",
-        Headers: {
+        headers: {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
@@ -62,3 +62,4 @@ loginForm.addEventListener("submit", async function (e) {
     loginForm.textContent = "Login Successful!";
 
 });
+
